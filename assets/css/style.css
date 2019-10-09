@@ -1,0 +1,155 @@
+main {
+  background: url(../assets/media/images/main-cover.png) no-repeat center center
+    fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+section {
+  -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+  box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+}
+.navigation-bar {
+  background-color: #2a2a2a;
+}
+
+.divider {
+  height: 2px;
+  color: black;
+  background-color: black;
+}
+
+.dev-title {
+  color: #f3cf55;
+}
+
+.test-bck {
+  background-color: #f3cf55;
+}
+
+.progress-bar-black {
+  background-color: black;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+#menu-button {
+  color: lightgrey;
+}
+
+#navbarContent li a {
+  color: lightgrey;
+}
+
+.border-orange {
+  border: 2px double #f3cf55;
+}
+
+.font-size {
+  font-size: 18rem;
+}
+.mint-background {
+  color: whitesmoke;
+}
+
+.red-title {
+  color: #800020;
+}
+/*
+div {
+  border: 1px solid red;
+}*/
+
+.column-title {
+}
+
+/* About me section styling */
+#education-column {
+  background-color: #808080;
+  color: whitesmoke;
+}
+#experience-column {
+  background-color: #777777;
+  color: whitesmoke;
+}
+
+#hobbies-column {
+  background-color: #656565;
+  color: whitesmoke;
+}
+
+#cv-column {
+  background-color: whitesmoke;
+}
+.sectionMain {
+  height: 99vh;
+  border-bottom: 2px solid black;
+}
+
+.profile-picture {
+  -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+  -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+  box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+}
+
+.maxsize {
+  width: 100%;
+}
+
+.navBarItem {
+}
+/* Individual styling for each section */
+
+#section-landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/media/images/landing-cover.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#section-about {
+  background-color: yellowgreen;
+}
+
+#section-projects {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/media/images/projects-cover.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+}
+
+#section-skills {
+  background-color: #d3d3d3;
+  color: #2f4f4f;
+}
+
+#section-contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/media/images/contact-cover.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  /* height: 70vh;*/
+}
+.progress-bar-project {
+  max-width: 100%;
+}
+
+.difficulty-easy {
+  background-color: ghostwhite;
+  color: grey;
+}
