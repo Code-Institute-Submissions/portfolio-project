@@ -1,5 +1,5 @@
 main {
-  background: url(../assets/media/images/main-cover.png) no-repeat center center
+  background: url(../media/images/main-cover.png) no-repeat center center
     fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -65,9 +65,6 @@ div {
   border: 1px solid red;
 }*/
 
-.column-title {
-}
-
 /* About me section styling */
 #education-column {
   background-color: #808080;
@@ -101,13 +98,12 @@ div {
   width: 100%;
 }
 
-.navBarItem {
-}
+
 /* Individual styling for each section */
 
 #section-landing {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/media/images/landing-cover.png) no-repeat center center fixed;
+    url(../media/images/landing-cover.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -122,7 +118,7 @@ div {
 
 #section-projects {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/media/images/projects-cover.png) no-repeat center center fixed;
+    url(../media/images/projects-cover.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -137,7 +133,7 @@ div {
 
 #section-contact {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(/assets/media/images/contact-cover.png) no-repeat center center fixed;
+    url(../media/images/contact-cover.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
