@@ -55,7 +55,6 @@ a:hover {
 }
 
 /* Landing page */
-
 #section-landing {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../media/images/landing-cover.png) no-repeat center center fixed;
@@ -69,6 +68,10 @@ a:hover {
 
 #main-title {
   color: whitesmoke;
+}
+
+#dublin {
+  color: rgb(91, 206, 91);
 }
 
 .border-orange {
@@ -137,6 +140,19 @@ a:hover {
 #section-projects a:hover {
   color: white;
 }
+
+/*Skills, software and tools section*/
+.tools-icon {
+  transition: 0.4s;
+}
+
+.tools-icon:hover {
+  color: black;
+  transition: 0.4s;
+}
+
+
+
 
 /* Individual styling for each section */
 
