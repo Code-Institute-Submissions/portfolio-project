@@ -10,11 +10,10 @@
     function dostuff() {
       eloperElement.append(text[i]);
 
-      if (i < text.length) i++;
+      if (i < text.length -1) i++;
       else clearInterval(interval);
     }
     interval = setInterval(dostuff, 160);
-    return false;
   }
 
   eloper();
