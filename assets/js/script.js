@@ -2,7 +2,7 @@
   /* Function taken from StackOverflow and modified.
   Source: https://stackoverflow.com/questions/9383016/for-loop-at-an-interval */
   function eloper() {
-    var eloperElement = document.getElementById("eloper");
+    var eloperElement = document.getElementById("full-stack-title");
     let interval;
     let i = 0;
     let textInitial = "Full Stack Developer";

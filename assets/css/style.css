@@ -1,3 +1,5 @@
+/* Global CSS */
+
 main {
   background: url(../media/images/main-cover.png) no-repeat center center
     fixed;
@@ -12,8 +14,35 @@ section {
   -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
   box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
 }
+
+/* Navigation bar */
 .navigation-bar {
   background-color: #2a2a2a;
+}
+
+#menu-button {
+  color: lightgrey;
+}
+
+/* Landing page */
+
+#section-landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../media/images/landing-cover.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+#main-title {
+  color: whitesmoke;
+}
+
+.border-orange {
+  border: 2px solid #f3cf55;
 }
 
 .skills-icon {
@@ -22,46 +51,19 @@ section {
 
 .shadowy-boi {
   -webkit-box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
--moz-box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
-box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
-}
-.divider {
-  height: 2px;
-  color: black;
-  background-color: black;
+  -moz-box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
+  box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
 }
 
-.dev-title {
+.orange-title {
   color: #f3cf55;
 }
 
-.test-bck {
-  background-color: #f3cf55;
-}
 
 .progress-bar-black {
   background-color: #2f4f4f;
 }
 
-.navbar-nav {
-  flex-direction: row;
-}
-
-#menu-button {
-  color: lightgrey;
-}
-
-.mint-background {
-  color: whitesmoke;
-}
-
-.red-title {
-  color: #800020;
-}
-/*
-div {
-  border: 1px solid red;
-}*/
 
 /* About me section styling */
 #education-column {
@@ -89,7 +91,7 @@ div {
 .profile-picture {
   -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-  box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+  box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 1);
 }
 
 .maxsize {
@@ -99,16 +101,7 @@ div {
 
 /* Individual styling for each section */
 
-#section-landing {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../media/images/landing-cover.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
+
 
 #section-about {
   background-color: yellowgreen;
