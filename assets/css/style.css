@@ -7,15 +7,45 @@ main {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+
 }
 
+.title {
+  font-weight: 600;
+}
 section {
   -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
   -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
   box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
 }
 
+a:hover {
+  text-decoration: none;
+  color: black;
+}
+
 /* Navigation bar */
+
+.navbar ul li a {
+  display: block;
+  color: #f3cf55;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden; /* Section added to prevent image becoming blurry on scaling. Snippet taken from StackOverflow */
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: 0.4s;
+}
+
+.navbar div ul li a:hover {
+  transform: scale(1.3);
+  transition: 0.4s;
+  text-shadow: 1px -1px 5px rgb(255, 217, 0);
+
+}
+
+
+
 .navigation-bar {
   background-color: #2a2a2a;
 }
@@ -66,6 +96,10 @@ section {
 
 
 /* About me section styling */
+#cv-link a {
+  color: #2a2a2a;
+}
+
 #education-column {
   background-color: #808080;
   color: whitesmoke;
@@ -98,13 +132,18 @@ section {
   width: 100%;
 }
 
+/* Past projects section */
+
+#section-projects a:hover {
+  color: white;
+}
 
 /* Individual styling for each section */
 
 
 
 #section-about {
-  background-color: yellowgreen;
+  
 }
 
 #section-projects {
@@ -139,4 +178,21 @@ section {
 .difficulty-easy {
   background-color: ghostwhite;
   color: grey;
+}
+
+/* Footer area */
+
+#footer {
+  background-color: #2a2a2a;
+  color: #f3cf55;
+}
+
+#footer a {
+  color: #f3cf55;
+  transition: 0.4s;
+}
+
+#footer a:hover {
+  color: white;
+  transition: 0.4s;
 }

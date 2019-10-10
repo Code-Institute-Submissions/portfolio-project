@@ -12,6 +12,9 @@
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<script src="https://kit.fontawesome.com/63c8cd1252.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="/libraries/font-mfizz/font-mfizz.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+
 	<title>Hello, world!</title>
 </head>
 
@@ -30,16 +33,16 @@
 				<span id="menu-button">Menu</span>
 			</button>
 
-			<div class=" collapse navbar-collapse col-12" id="navbarContent" role="navigation">
-				<ul class="navbar-nav my-auto flex-sm-column flex-md-row">
+			<div class="collapse navbar-collapse col-12" id="navbarContent" role="navigation">
+				<ul class="navbar-nav flex-sm-column flex-md-row">
 					<li class="d-none d-md-block my-3"><a href="#" class="px-1 mx-1"><span
 								class=" h4 orange-title fab fa-facebook"></span></a></li>
 					<li class="d-none d-md-block my-3 "><a href="#" class="px-1 mx-1"><span
 								class=" h4 orange-title fab fa-github"></span></a></li>
-					<li class="my-md-3 my-1"><a href="#" class="px-1 mx-1">About me</a></li>
-					<li class="my-md-3 my-1"><a href="#" class="px-1 mx-1">Projects</a></li>
-					<li class="my-md-3 my-1"><a href="#" class="px-1 mx-1">Skills</a></li>
-					<li class="my-md-3 my-1"><a href="#" class="px-1 mx-1">Contact</a></li>
+					<li class="my-md-3 my-1"><a href="#" class="px-1 mx-1 mx-md-3">About me</a></li>
+					<li class="my-md-3 my-1"><a href="#" class="px-1 mx-1 mx-md-3">Projects</a></li>
+					<li class="my-md-3 my-1"><a href="#" class="px-1 mx-1 mx-md-3">Skills</a></li>
+					<li class="my-md-3 my-1"><a href="#" class="px-1 mx-1 mx-md-3">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -56,8 +59,8 @@
 			<div class="row">
 				<div class="col-xl-1"></div>
 				<div class="col-sm-10 col-md-5 col-xl-4 py-0 py-sm-5 my-auto mx-auto text-right" id="main-title"> 
-					<h3>Gocan Dan</h3>
-					<h5 id="full-stack-title" class="orange-title">&nbsp;</h5> <!-- Added a blank space to not have the row collapsed on loading -->
+					<h3 class="title">Gocan Dan</h3>
+					<h5 id="full-stack-title" class="orange-title title">&nbsp;</h5> <!-- Added a blank space to not have the row collapsed on loading -->
 					<p class="text-justify">Hello, my name is Dan and I am an aspiring Full Stack Developer, currently studying front 
 						and backend technologies. I am a perfectionist, a hard worker and an attentive individual that always goes 
 						the extra mile for whoever trusts me with their ideas, projects, identities or businesses. I design <strong>fully responsive</strong>,
@@ -73,10 +76,10 @@
 		</section>
 
 		<!-- About section -->
-		<section class="container" id="section-about">
+		<section class="container" id="section-aboutme">
 			<div class="row">
 				<div class="col-xs-12 col-md-4 col-xl-4 mx-auto py-5" id="education-column">
-					<h4 class="text-center pb-4"><span class="orange-title fas fa-user-graduate"></span> Education</h4>
+					<h4 class="text-center pb-4 title"><span class="orange-title fas fa-user-graduate"></span> Education</h4>
 					<div class="row">
 						<p class="col-12 col-lg-2 text-left h5 column-title pb-0 mb-0">2020</p>
 						<p class="col-12 col-lg-10 text-justify pb-2">Graduated a Full Stack Development bootcamp with
@@ -105,7 +108,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4 col-xl-4 mx-auto py-5" id="experience-column">
-					<h4 class="text-center pb-4"><span class="orange-title fas fa-laptop-code"></span> Experience</h4>
+					<h4 class="text-center pb-4 title"><span class="orange-title fas fa-laptop-code"></span> Experience</h4>
 					<div class="row">
 						<p class="col-xs-12 col-lg-2 text-left h5 column-title pb-xs-0 px-md-3 mb-0">2018</p>
 						<p class="col-xs-12 col-lg-10 text-justify mr-1 mx-lg-0">Since 2018 I have been employed for a
@@ -121,7 +124,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12 col-md-4 col-xl-4 mx-auto py-5" id="hobbies-column">
-					<h4 class="text-center pb-4"><span class="orange-title fas fa-chess"></span> Hobbies</h4>
+					<h4 class="text-center pb-4 title"><span class="orange-title fas fa-chess"></span> Hobbies</h4>
 					<p class="text-justify">I think my greatest and most relevant hobby is my passion for video games,
 						especially strategy ones and
 						even more so, grand strategy games (like Europa Universalis IV or Hearts of Iron IV). Apart from
@@ -134,7 +137,7 @@
 
 			<div class="row text-right">
 				<div class="col-12 py-5 pr-5" id="cv-column">
-					<p class="my-auto">For more information, please <span><strong><a href="">download my
+					<p class="my-auto">For more information, please <span id="cv-link"><strong><a href="" >download my
 									CV</a></strong></span><br class="d-none d-md-block">
 						and check below a few of my personal projects.</p>
 				</div>
@@ -148,27 +151,27 @@
 
 					<div class="row pt-5 text-center">
 						<div class="col-12">
-							<a href="" class="project-block orange-title h6" id="coin-space-calculator">Coin space
+							<a href="" class="project-block orange-title h5 title" id="coin-space-calculator">Coin space
 								calculator</a>
 						</div>
 					</div>
 
 					<div class="row py-2 text-center">
 						<div class="col-12">
-							<a href="" class="project-block orange-title h6" id="mad-memory-game">MadMemory Game</a>
+							<a href="" class="project-block orange-title h5 title" id="mad-memory-game">MadMemory Game</a>
 						</div>
 					</div>
 
 					<div class="row py-2 text-center">
 						<div class="col-12">
-							<a href="" class="project-block orange-title h6" id="the-brigades">Brigades: The card
+							<a href="" class="project-block orange-title h5 title" id="the-brigades">Brigades: The card
 								game</a>
 						</div>
 					</div>
 
 					<div class="row py-2 text-center">
 						<div class="col-12">
-							<a href="" class="project-block orange-title h6" id="social-network">The social network
+							<a href="" class="project-block orange-title h5 title" id="social-network">The social network
 								"LeaveIt"</a>
 						</div>
 					</div>
@@ -196,7 +199,7 @@
 					</div>
 					<div class="row">
 						<div class="col-12 col-md-6 text-left px-md-5">
-							<p class="my-auto h6 pb-3">Tech used:</p>
+							<p class="my-auto h6 pb-3 title">Tech used:</p>
 							<i class="h2 fab fa-html5 mx-1"></i>
 							<i class="h2 fab fa-css3-alt mx-1"></i>
 							<i class="h2 fab fa-bootstrap mx-1"></i>
@@ -205,12 +208,12 @@
 
 						</div>
 						<div class="col-6 col-md-3 pt-5 pb-2 pt-md-0">
-							<p class="my-auto py-2"><span class="h1 orange-title fab fa-github"></span></p>
-							<p class="my-auto">GitHub </p>
+							<a class="h1 orange-title fab fa-github my-auto py-2" href=""></a>
+							<p class="my-auto title">GitHub </p>
 						</div>
 						<div class="col-6 col-md-3 pt-5 pb-2 pt-md-0">
-							<p class="my-auto py-2"><span class="h1 orange-title fas fa-link"></span></p>
-							<p class="my-auto">Deployed project</p>
+							<a class="h1 orange-title fas fa-link my-auto py-2" href=""></a>
+							<p class="my-auto title">Deployed project</p>
 						</div>
 					</div>
 				</div>
@@ -227,7 +230,7 @@
 
 			<div class="row">
 				<div class="col-12 text-center">
-					<h5 class="py-4 h3">Languages known</h5>
+					<h5 class="py-4 h3 title">Languages known</h5>
 				</div>
 			</div>
 
@@ -383,7 +386,7 @@
 
 			<div class="row pt-5">
 				<div class="col-12">
-					<p class="text-center h3">Software and tools used:</p>
+					<p class="text-center h3 title">Software and tools used:</p>
 				</div>
 				<div class="col-12">
 					<p class="text-center h4 pt-3">
@@ -429,7 +432,16 @@
 		</section>
 
 		<!-- Footer -->
-		<footer class="container"></footer>
+		<footer class="container" id="footer">
+			<div class="row py-2 my-auto">
+				<div class="col-6 text-left">
+						<p class="my-auto title">Copyright 2019, Gocan Dan</p>
+				</div>
+				<div class="col-6 text-right">
+					<a href="" class="my-auto title">Privacy policy</a>
+				</div>
+			</div>
+		</footer>
 	</main>
 
 
