@@ -1,261 +1,279 @@
 /* Global CSS */
 
-main {
-  background: url(../media/images/main-cover.png) no-repeat center center
-    fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Quicksand', sans-serif;
+body {
+    background: url(../media/images/main-cover.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Quicksand', sans-serif;
 }
 
 a {
-  transition: 0.3s;
+    transition: 0.3s;
 }
 
 a:hover {
-  text-decoration: none;
-  color: black;
-  transition: 0.3s;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
 }
 
 .title {
-  font-weight: 600;
-}
-section {
-  -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-  -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-  box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+    font-weight: 600;
 }
 
+section {
+    -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+    box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+}
 
 
 /* Navigation bar */
 
 .navbar ul li a {
-  display: block;
-  color: #f3cf55;
-  text-decoration: none;
-  -webkit-backface-visibility: hidden; /* Section added to prevent image becoming blurry on scaling. Snippet taken from StackOverflow */
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  transition: 0.4s;
+    display: block;
+    color: #f3cf55;
+    text-decoration: none;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Section added to prevent image becoming blurry on scaling. Snippet taken from StackOverflow */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    transition: 0.4s;
 }
 
 .navbar div ul li a:hover {
-  transform: scale(1.3);
-  transition: 0.4s;
-  text-shadow: 1px -1px 5px rgb(255, 217, 0);
-
+    transform: scale(1.3);
+    transition: 0.4s;
+    text-shadow: 1px -1px 5px rgb(255, 217, 0);
 }
 
-
-
 .navigation-bar {
-  background-color: #2a2a2a;
+    background-color: #2a2a2a;
 }
 
 #menu-button {
-  color: lightgrey;
+    color: lightgrey;
 }
 
+
 /* Landing page */
+
 #section-landing {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../media/images/landing-cover.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/landing-cover.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 #main-title {
-  color: whitesmoke;
+    color: whitesmoke;
 }
 
 #dublin {
-  color: rgb(91, 206, 91);
+    color: rgb(91, 206, 91);
 }
 
 .border-orange {
-  border: 2px solid #f3cf55;
+    border: 2px solid #f3cf55;
 }
 
 .skills-icon {
-  color: #2f4f4f;
+    color: #2f4f4f;
 }
 
 .shadowy-boi {
-  -webkit-box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
-  box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
 }
 
 .orange-title {
-  color: #f3cf55;
+    color: #f3cf55;
 }
 
-
 .progress-bar-black {
-  background-color: #2f4f4f;
+    background-color: #2f4f4f;
 }
 
 
 /* About me section styling */
+
 #cv-link a {
-  color: #2a2a2a;
+    color: #2a2a2a;
 }
 
 #education-column {
-  background-color: #808080;
-  color: whitesmoke;
+    background-color: #808080;
+    color: whitesmoke;
 }
+
 #experience-column {
-  background-color: #777777;
-  color: whitesmoke;
+    background-color: #777777;
+    color: whitesmoke;
 }
 
 #hobbies-column {
-  background-color: #656565;
-  color: whitesmoke;
+    background-color: #656565;
+    color: whitesmoke;
 }
 
 #cv-column {
-  background-color: whitesmoke;
+    background-color: whitesmoke;
 }
+
 .sectionMain {
-  height: 99vh;
-  border-bottom: 2px solid black;
+    height: 99vh;
+    border-bottom: 2px solid black;
 }
 
 .profile-picture {
-  -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-  -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-  box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 1);
+    -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+    -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+    box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 1);
 }
 
 .maxsize {
-  width: 100%;
+    width: 100%;
 }
+
 
 /* Past projects section */
 
 #section-projects a:hover {
-  color: white;
+    color: white;
 }
 
+
 /*Skills, software and tools section*/
+
 .tools-icon {
-  transition: 0.4s;
+    transition: 0.4s;
 }
 
 .tools-icon:hover {
-  color: black;
-  transition: 0.4s;
-}
-
-
-
-
-/* Individual styling for each section */
-
-
-
-#section-about {
-  
+    color: black;
+    transition: 0.4s;
 }
 
 #section-projects {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../media/images/projects-cover.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/projects-cover.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
 }
 
 #section-skills {
-  background-color: #d3d3d3;
-  color: #2f4f4f;
+    background-color: #d3d3d3;
+    color: #2f4f4f;
 }
 
 #section-contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../media/images/contact-cover.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-  /* height: 70vh;*/
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/contact-cover.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    /* height: 70vh;*/
 }
+
 .progress-bar-project {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .difficulty-easy {
-  background-color: ghostwhite;
-  color: grey;
+    background-color: ghostwhite;
+    color: grey;
 }
+
+
 /* Contact section */
 
 #section-contact a span {
-  transition: 0.3s;
-} 
+    transition: 0.3s;
+}
 
 #section-contact a span:hover {
-  color: white;
-  transition: 0.3s;
-} 
+    color: white;
+    transition: 0.3s;
+}
+
+#send-button {
+    background-color: #2a2a2a;
+    color: #f3cf55;
+    transition: 0.4s;
+}
+
+#send-button:hover {
+    background-color: #f3cf55;
+    color: #2a2a2a;
+}
 
 
 /* Footer area */
 
 #footer {
-  background-color: #2a2a2a;
-  color: #f3cf55;
+    background-color: #2a2a2a;
+    color: #f3cf55;
+    border: 0;
 }
 
 #footer a {
-  color: #f3cf55;
-  transition: 0.4s;
+    color: #f3cf55;
+    transition: 0.4s;
 }
 
 #footer a:hover {
-  color: white;
-  transition: 0.4s;
+    color: white;
+    transition: 0.4s;
 }
+
 
 /* Custom media queries */
-/* Using the same breaking points as Bootstrap 4 */
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-  #section-projects {
-    height: 100vh;
-  }
- }
 
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
-  #section-projects {
-    height: 90vh;
-  } 
+
+/* Using the same breaking points as Bootstrap 4 */
+
+
+/* Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+    #section-projects {
+        height: 100vh;
+    }
 }
 
+
+/* Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+    #section-projects {
+        height: 90vh;
+    }
+}
+
+
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
-  #section-projects {
-    height: 70vh;
-  }
- }
+
+@media (min-width: 992px) {
+    #section-projects {
+        height: 70vh;
+    }
+}
+
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
-  #section-projects {
-    height: 65vh;
-  }
- }
+
+@media (min-width: 1200px) {
+    #section-projects {
+        height: 65vh;
+    }
+}

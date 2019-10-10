@@ -1,19 +1,19 @@
-
 /* Function taken from StackOverflow and modified.
 Source: https://stackoverflow.com/questions/9383016/for-loop-at-an-interval */
 function eloper() {
-  var eloperElement = document.getElementById("full-stack-title");
-  let interval;
-  let i = 0;
-  let textInitial = "Full Stack Developer";
-  let text = textInitial.split("");
-  function dostuff() {
-    eloperElement.append(text[i]);
+    var eloperElement = document.getElementById("full-stack-title");
+    let interval;
+    let i = 0;
+    let textInitial = "Full Stack Developer";
+    let text = textInitial.split("");
 
-    if (i < text.length - 1) i++;
-    else clearInterval(interval);
-  }
-  interval = setInterval(dostuff, 160);
+    function dostuff() {
+        eloperElement.append(text[i]);
+
+        if (i < text.length - 1) i++;
+        else clearInterval(interval);
+    }
+    interval = setInterval(dostuff, 160);
 }
 
 
@@ -21,15 +21,15 @@ function eloper() {
 /* Global variables */
 
 
-  
-  
-  var projectContent = document.getElementById("project-content");
-  var techUsed = document.getElementById("tech-used");
-  var githubLink = document.getElementById("github-link");
-  var deployedLink = document.getElementById("deployed-link");
 
-  function coinSpaceF() {
-   
+
+var projectContent = document.getElementById("project-content");
+var techUsed = document.getElementById("tech-used");
+var githubLink = document.getElementById("github-link");
+var deployedLink = document.getElementById("deployed-link");
+
+function coinSpaceF() {
+
 
     projectContent.innerHTML = `<strong>Coin Space Calculator</strong> has been one of my first
     JS projects. The skeleton and the user interface is rendered using Bootstrap.
@@ -52,9 +52,9 @@ function eloper() {
     deployedLink.setAttribute("href", "http://www.google.com");
 
     return false;
-  }
+}
 
-  function madMemoryF() {
+function madMemoryF() {
     projectContent.innerHTML = `<strong>Mad Memory</strong> is a mini-game, written with 
 jQuery and using a basic HTML and Bootstrap skeleton. The game begins by
 selecting the level of difficulty which can vary from very easy to insanely
@@ -77,9 +77,9 @@ time in which they have to find all 10 pairs using memory and dexterity skills`;
     deployedLink.setAttribute("href", "http://www.google.com");
 
     return false;
-  }
+}
 
-  function brigadesF() {
+function brigadesF() {
     projectContent.innerHTML = `<strong>Brigades: The card game</strong> is a game written with
   an array of JS frameworks and libraries. It uses React to set up the interface
   together with elements of CSS and Bootstrap, used to arrange them in page. 
@@ -105,9 +105,9 @@ time in which they have to find all 10 pairs using memory and dexterity skills`;
     deployedLink.setAttribute("href", "http://www.google.com");
 
     return false;
-  }
+}
 
-  function socialNetworkF() {
+function socialNetworkF() {
     projectContent.innerHTML = `<strong>A number of studies have found an association 
   between social media use and depression, anxiety, sleep problems, eating 
   issues, and increased suicide risk, warn researchers from the University 
@@ -130,8 +130,11 @@ time in which they have to find all 10 pairs using memory and dexterity skills`;
     deployedLink.setAttribute("href", "https://www.theweek.co.uk/checked-out/90557/is-social-media-bad-for-your-mental-health");
 
     return false;
-  }
+}
+
+function sendForm() {
+    alert("Thank you very much for your message. I will get back to you as soon as possible");
+}
 
 
 eloper();
-
