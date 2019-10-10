@@ -17,7 +17,7 @@ section {
 }
 
 .skills-icon {
-  color: black;
+  color: #2f4f4f;
 }
 
 .shadowy-boi {
@@ -40,7 +40,7 @@ box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
 }
 
 .progress-bar-black {
-  background-color: black;
+  background-color: #2f4f4f;
 }
 
 .navbar-nav {
@@ -51,17 +51,6 @@ box-shadow: 6px -4px 14px -5px rgba(0,0,0,0.75);
   color: lightgrey;
 }
 
-#navbarContent li a {
-  color: lightgrey;
-}
-
-.border-orange {
-  border: 2px double #f3cf55;
-}
-
-.font-size {
-  font-size: 18rem;
-}
 .mint-background {
   color: whitesmoke;
 }
