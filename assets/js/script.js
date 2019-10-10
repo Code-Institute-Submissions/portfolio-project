@@ -133,6 +133,7 @@ function socialNetworkF() {
 }
 
 function sendForm() {
+    document.getElementById("contact-form").reset();
     alert("Thank you very much for your message. I will get back to you as soon as possible");
 }
 
