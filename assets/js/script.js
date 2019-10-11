@@ -1,38 +1,38 @@
-    /* Global variables */
-    let projectContent = document.getElementById("project-content");
-    let techUsed = document.getElementById("tech-used");
-    let githubLink = document.getElementById("github-link");
-    let deployedLink = document.getElementById("deployed-link");
-    let topButton = document.getElementById("to-the-top-button");
-    /* End of global variables */
+/* Global variables */
+let projectContent = document.getElementById("project-content");
+let techUsed = document.getElementById("tech-used");
+let githubLink = document.getElementById("github-link");
+let deployedLink = document.getElementById("deployed-link");
+let topButton = document.getElementById("to-the-top-button");
+/* End of global variables */
 
 
-    /* Function taken from StackOverflow and modified.
-    Source: https://stackoverflow.com/questions/9383016/for-loop-at-an-interval */
-    function fullStackTitle() {
-        var fullStackElement = document.getElementById("full-stack-title");
-        let interval;
-        let i = 0;
-        let textInitial = "Full Stack Developer";
-        let text = textInitial.split("");
+/* Function taken from StackOverflow and modified.
+Source: https://stackoverflow.com/questions/9383016/for-loop-at-an-interval */
+function fullStackTitle() {
+    var fullStackElement = document.getElementById("full-stack-title");
+    let interval;
+    let i = 0;
+    let textInitial = "Full Stack Developer";
+    let text = textInitial.split("");
 
-        function dostuff() {
-            fullStackElement.append(text[i]);
+    function dostuff() {
+        fullStackElement.append(text[i]);
 
-            if (i < text.length - 1) i++;
-            else clearInterval(interval);
-        }
-        interval = setInterval(dostuff, 200);
+        if (i < text.length - 1) i++;
+        else clearInterval(interval);
     }
+    interval = setInterval(dostuff, 200);
+}
 
 
 
 
-    /* Functions that modify the content of the My projects content. */
-    function coinSpaceF() {
+/* Functions that modify the content of the My projects content. */
+function coinSpaceF() {
 
 
-        projectContent.innerHTML = `<strong>Coin Space Calculator</strong> has been one of my first
+    projectContent.innerHTML = `<strong>Coin Space Calculator</strong> has been one of my first
     JS projects. The skeleton and the user interface is rendered using Bootstrap.
     The goal of this project is to calculate if the amount a coin is worth is 
     actually worth the space it occupie=s. For example, in Dublin, for the more
@@ -42,21 +42,21 @@
     Canadian Dollars, as well as for Yuan and Yen. It takes into consideration all
     available coins in circulation.`;
 
-        techUsed.innerHTML = `
+    techUsed.innerHTML = `
   <i class="h2 fab fa-html5 mx-1"></i>
   <i class="h2 fab fa-css3-alt mx-1"></i>
   <i class="h2 fab fa-bootstrap mx-1"></i>
   <i class="h2 fab fa-js-square mx-1"></i>
   <i class="h2 fab icon-jquery mx-1"></i>
   `
-        githubLink.setAttribute("href", "http://www.facebook.com");
-        deployedLink.setAttribute("href", "http://www.google.com");
+    githubLink.setAttribute("href", "http://www.facebook.com");
+    deployedLink.setAttribute("href", "http://www.google.com");
 
-        return false;
-    }
+    return false;
+}
 
-    function madMemoryF() {
-        projectContent.innerHTML = `<strong>Mad Memory</strong> is a mini-game, written with 
+function madMemoryF() {
+    projectContent.innerHTML = `<strong>Mad Memory</strong> is a mini-game, written with 
 jQuery and using a basic HTML and Bootstrap skeleton. The game begins by
 selecting the level of difficulty which can vary from very easy to insanely
 hard. The player is given 20 cards, with 10 pairs of custom drawn cartoons,
@@ -67,21 +67,21 @@ selected two cards will be hidden again. In accordance with the difficulty
 selected, the player has a limited amount of clicks and a limited amount of
 time in which they have to find all 10 pairs using memory and dexterity skills`;
 
-        techUsed.innerHTML = `
+    techUsed.innerHTML = `
 <i class="h2 fab fa-html5 mx-1"></i>
 <i class="h2 fab fa-css3-alt mx-1"></i>
 <i class="h2 fab fa-bootstrap mx-1"></i>
 <i class="h2 fab fa-js-square mx-1"></i>
 <i class="h2 icon-sass mx-1"></i>
 `
-        githubLink.setAttribute("href", "http://www.facebook.com");
-        deployedLink.setAttribute("href", "http://www.google.com");
+    githubLink.setAttribute("href", "http://www.facebook.com");
+    deployedLink.setAttribute("href", "http://www.google.com");
 
-        return false;
-    }
+    return false;
+}
 
-    function brigadesF() {
-        projectContent.innerHTML = `<strong>Brigades: The card game</strong> is a game written with
+function brigadesF() {
+    projectContent.innerHTML = `<strong>Brigades: The card game</strong> is a game written with
   an array of JS frameworks and libraries. It uses React to set up the interface
   together with elements of CSS and Bootstrap, used to arrange them in page. 
   The multiplayer traffic is handled by Node.js. The purpose of the game is to
@@ -92,7 +92,7 @@ time in which they have to find all 10 pairs using memory and dexterity skills`;
   fortifying, forming squares, etc). The game is played on a 100 by 100 grid
   with certain  geographical features`;
 
-        techUsed.innerHTML = `
+    techUsed.innerHTML = `
 <i class="h2 fab fa-html5 mx-1"></i>
 <i class="h2 fab fa-css3-alt mx-1"></i>
 <i class="h2 fab fa-bootstrap mx-1"></i>
@@ -102,14 +102,14 @@ time in which they have to find all 10 pairs using memory and dexterity skills`;
 <i class="h2 icon-unity mx-1"></i>
 
 `
-        githubLink.setAttribute("href", "http://www.facebook.com");
-        deployedLink.setAttribute("href", "http://www.google.com");
+    githubLink.setAttribute("href", "http://www.facebook.com");
+    deployedLink.setAttribute("href", "http://www.google.com");
 
-        return false;
-    }
+    return false;
+}
 
-    function socialNetworkF() {
-        projectContent.innerHTML = `<strong>A number of studies have found an association 
+function socialNetworkF() {
+    projectContent.innerHTML = `<strong>A number of studies have found an association 
   between social media use and depression, anxiety, sleep problems, eating 
   issues, and increased suicide risk, warn researchers from the University 
   of Melbourne’s National Centre of Excellence in Youth Mental Health, 
@@ -120,52 +120,52 @@ time in which they have to find all 10 pairs using memory and dexterity skills`;
   Facebook could lead to symptoms of depression if the site triggered feelings 
   of envy in the user.</strong>`;
 
-        techUsed.innerHTML = `
+    techUsed.innerHTML = `
 <i class="h2 fab fa-html5 mx-1"></i>
 <i class="h2 fab fa-css3-alt mx-1"></i>
 <i class="h2 fab fa-bootstrap mx-1"></i>
 <i class="h2 fab fa-js-square mx-1"></i>
 <i class="h2 fab fa-vuejs mx-1"></i>
 `
-        githubLink.setAttribute("href", "https://www.theweek.co.uk/checked-out/90557/is-social-media-bad-for-your-mental-health");
-        deployedLink.setAttribute("href", "https://www.theweek.co.uk/checked-out/90557/is-social-media-bad-for-your-mental-health");
+    githubLink.setAttribute("href", "https://www.theweek.co.uk/checked-out/90557/is-social-media-bad-for-your-mental-health");
+    deployedLink.setAttribute("href", "https://www.theweek.co.uk/checked-out/90557/is-social-media-bad-for-your-mental-health");
 
-        return false;
-    }
-    /* End of functions */
+    return false;
+}
+/* End of functions */
 
 
-    /* Function to restart the content on the form when click the Send button */
-    function sendForm() {
-        document.getElementById("contact-form").reset();
+/* Function to restart the content on the form when click the Send button 
+function sendForm() {
         alert("Thank you very much for your message. I will get back to you as soon as possible");
+        document.getElementById("contact-form").reset();   
+}
+/* End of form restart function */
+
+
+/* Adding a back to the top button. Function inspired from W3 Schools */
+window.onscroll = function () {
+    scrollFunction(); // triggers the function when the window is being scrolled
+}
+
+function toTheTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        topButton.classList.add("visible");
+        topButton.classList.remove("invisible");
+    } else {
+        topButton.classList.add("invisible");
+        topButton.classList.remove("visible");
     }
-    /* End of form restart function */
+}
 
 
-    /* Adding a back to the top button. Function inspired from W3 Schools */
-    window.onscroll = function () {
-        scrollFunction(); // triggers the function when the window is being scrolled
-    }
+/* End of back to the top button */
 
-    function toTheTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    
-    function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            topButton.classList.add("visible");
-            topButton.classList.remove("invisible");
-        } else {
-            topButton.classList.add("invisible");
-            topButton.classList.remove("visible");
-        }
-    }
-
-    
-    /* End of back to the top button */
-
-    fullStackTitle();
+fullStackTitle();
 
 

@@ -33,10 +33,10 @@
 
         <div class="collapse navbar-collapse col-12" id="navbarContent" role="navigation">
             <ul class="navbar-nav flex-sm-column flex-md-row">
-                <li class="d-none d-md-block my-3"><a href="https://www.facebook.com/gocan.danmihai" class="px-1 mx-1" target="_blank"><span
-                            class=" h4 orange-title fab fa-facebook"></span></a></li>
-                <li class="d-none d-md-block my-3 "><a href="https://github.com/WWWaterloo/" class="px-1 mx-1" target="_blank"><span
-                            class=" h4 orange-title fab fa-github"></span></a></li>
+                <li class="d-none d-md-block my-3"><a href="https://www.facebook.com/gocan.danmihai" class="px-1 mx-1"
+                        target="_blank"><span class=" h4 orange-title fab fa-facebook"></span></a></li>
+                <li class="d-none d-md-block my-3 "><a href="https://github.com/WWWaterloo/" class="px-1 mx-1"
+                        target="_blank"><span class=" h4 orange-title fab fa-github"></span></a></li>
                 <li class="my-md-3 my-1"><a href="#section-aboutme" class="px-1 mx-1 mx-md-3">About me</a></li>
                 <li class="my-md-3 my-1"><a href="#section-projects" class="px-1 mx-1 mx-md-3">Projects</a></li>
                 <li class="my-md-3 my-1"><a href="#section-skills" class="px-1 mx-1 mx-md-3">Skills</a></li>
@@ -48,8 +48,10 @@
     <!-- Landing page -->
     <section class="container shadow-section" id="section-landing">
         <div class="row flex-row-reverse align-items-start d-md-none mx-4 mx-sm-0">
-            <div class="col-1 m-3"><a href="https://www.facebook.com/gocan.danmihai" target="_blank"><span class=" h2 orange-title fab fa-facebook"></span></a></div>
-            <div class="col-1 m-3"><a href="https://github.com/WWWaterloo/" target="_blank"><span class=" h2 orange-title fab fa-github"></a></span></div>
+            <div class="col-1 m-3"><a href="https://www.facebook.com/gocan.danmihai" target="_blank"><span
+                        class=" h2 orange-title fab fa-facebook"></span></a></div>
+            <div class="col-1 m-3"><a href="https://github.com/WWWaterloo/" target="_blank"><span
+                        class=" h2 orange-title fab fa-github"></a></span></div>
         </div>
 
         <!-- Name and short introduction -->
@@ -419,27 +421,30 @@
                     <div class="form-group">
                         <label for="subjectInput">Subject</label>
                         <input type="text" class="form-control" id="subjectInput" placeholder="Application idea!"
-                            minlength="10">
+                            minlength="10" required>
                     </div>
                     <div class="form-group">
                         <label for="emailInput">Your e-mail address</label>
                         <input type="email" class="form-control" id="emailInput" placeholder="johnsmith@email.com"
-                            pattern="email">
+                            required>
                     </div>
 
                     <div class="form-group">
                         <label for="textInput">Your message</label>
-                        <textarea class="form-control" id="textInput" rows="7" minlength="30"></textarea>
+                        <textarea type="text" class="form-control" id="textInput" rows="7" minlength="30"
+                            placeholder="Please add your messagere here." required></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center form-group">
+                            <button type="submit" class="w-100 btn py-2" id="send-button" onclick="sendForm()">
+                                <span class="h6 my-auto"><strong>Send</strong></span>
+                            </button>
+                        </div>
                     </div>
                 </form>
 
-                <div class="row">
-                    <div class="col-12 text-center form-group">
-                        <button type="submit" class="w-100 btn py-2" id="send-button" onclick="sendForm()">
-                            <span class="h6 my-auto"><strong>Send</strong></span>
-                        </button>
-                    </div>
-                </div>
+
 
             </div>
         </div>

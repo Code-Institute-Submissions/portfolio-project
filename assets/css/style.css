@@ -191,6 +191,14 @@ a:hover {
     color: #2a2a2a;
 }
 
+input:invalid {
+    border: 2px solid rgb(255, 101, 81);
+  }
+  
+  input:valid {
+    border: 2px solid rgb(161, 235, 25);
+  }
+
 
 /* Footer section */
 #footer {
