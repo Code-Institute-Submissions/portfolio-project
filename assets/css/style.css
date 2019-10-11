@@ -1,4 +1,5 @@
 /* Global CSS */
+
 body {
     background: url(../media/images/main-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -23,19 +24,26 @@ a:hover {
 }
 
 .shadow-section {
-    -webkit-box-shadow: 0px -7px 15px 1px rgba(0,0,0,0.86);
-    -moz-box-shadow: 0px -7px 15px 1px rgba(0,0,0,0.86);
-    box-shadow: 0px -7px 15px 1px rgba(0,0,0,0.86);
+    -webkit-box-shadow: 0px -7px 15px 1px rgba(0, 0, 0, 0.86);
+    -moz-box-shadow: 0px -7px 15px 1px rgba(0, 0, 0, 0.86);
+    box-shadow: 0px -7px 15px 1px rgba(0, 0, 0, 0.86);
 }
 
 #to-the-top-button {
-  opacity: 0.4;
-  position: fixed;
-  bottom: 1vh;
-  right: 1vw;
+    opacity: 0.4;
+    position: fixed;
+    bottom: 1vh;
+    right: 1vw;
+    transition: 0.3s;
 }
 
-.border-orange { /* used for profile picture */
+#to-the-top-button:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.border-orange {
+    /* used for profile picture */
     border: 2px solid #f3cf55;
 }
 
@@ -44,6 +52,7 @@ a:hover {
 }
 
 /* Navigation bar */
+
 .navbar ul li a {
     display: block;
     color: #f3cf55;
@@ -67,10 +76,11 @@ a:hover {
 }
 
 #menu-button {
-  color: #f3cf55;
+    color: #f3cf55;
 }
 
 /* Landing page */
+
 #section-landing {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/landing-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -89,11 +99,12 @@ a:hover {
     color: rgb(91, 206, 91);
 }
 
-
 /* About me section styling */
+
 #section-aboutme {
     color: whitesmoke;
 }
+
 #cv-link a {
     color: #2a2a2a;
 }
@@ -121,6 +132,7 @@ a:hover {
 }
 
 /* Past projects section */
+
 #section-projects {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/projects-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -135,6 +147,7 @@ a:hover {
 }
 
 /*Skills, software and tools section*/
+
 #section-skills {
     background-color: #d3d3d3;
     color: #2f4f4f;
@@ -149,7 +162,8 @@ a:hover {
     transition: 0.4s;
 }
 
-.shadowy-boi { /* Used to add the shadow effect on the progress bar */
+.shadowy-boi {
+    /* Used to add the shadow effect on the progress bar */
     -webkit-box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
     box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
@@ -160,6 +174,7 @@ a:hover {
 }
 
 /* Contact section */
+
 #section-contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/contact-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -186,21 +201,21 @@ a:hover {
 }
 
 #send-button:hover {
-  border: 1px solid #2a2a2a;
+    border: 1px solid #2a2a2a;
     background-color: #f3cf55;
     color: #2a2a2a;
 }
 
 input:invalid {
     border: 2px solid rgb(255, 101, 81);
-  }
-  
-  input:valid {
-    border: 2px solid rgb(161, 235, 25);
-  }
+}
 
+input:valid {
+    border: 2px solid rgb(161, 235, 25);
+}
 
 /* Footer section */
+
 #footer {
     background-color: #2a2a2a;
     color: #f3cf55;
@@ -217,42 +232,43 @@ input:invalid {
     transition: 0.4s;
 }
 
-
 /* Custom media queries */
+
 /* Using the same breaking points as Bootstrap 4 */
 
 /* Small devices (landscape phones, 576px and up)*/
+
 @media (min-width: 576px) {
     #section-projects {
         height: 100vh;
     }
 }
 
-
 /* Medium devices (tablets, 768px and up)*/
+
 @media (min-width: 768px) {
     #section-projects {
         height: 90vh;
     }
-
     .navbar div ul li a:hover {
-      transform: scale(1.3);
+        transform: scale(1.3);
     }
 }
 
 /* Large devices (desktops, 992px and up)*/
+
 @media (min-width: 992px) {
     #section-projects {
         height: 70vh;
     }
 }
 
-
 /* Extra large devices (large desktops, 1200px and up)*/
+
 @media (min-width: 1200px) {
     #section-projects {
-        height: 65vh; /* Added custom height for the section project due to content changing dinamically, which
+        height: 65vh;
+        /* Added custom height for the section project due to content changing dinamically, which
                         forced the whole section to move upwards, depending on the size of the content */
     }
 }
-

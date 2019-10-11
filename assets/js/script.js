@@ -135,12 +135,6 @@ function socialNetworkF() {
 /* End of functions */
 
 
-/* Function to restart the content on the form when click the Send button 
-function sendForm() {
-        alert("Thank you very much for your message. I will get back to you as soon as possible");
-        document.getElementById("contact-form").reset();   
-}
-/* End of form restart function */
 
 
 /* Adding a back to the top button. Function inspired from W3 Schools */
