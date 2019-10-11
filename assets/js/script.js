@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', function () {  // Waiting for the DOM to be loaded
-
     /* Global variables */
     let projectContent = document.getElementById("project-content");
     let techUsed = document.getElementById("tech-used");
@@ -150,6 +148,11 @@ time in which they have to find all 10 pairs using memory and dexterity skills`;
         scrollFunction(); // triggers the function when the window is being scrolled
     }
 
+    function toTheTop() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             topButton.classList.add("visible");
@@ -160,12 +163,9 @@ time in which they have to find all 10 pairs using memory and dexterity skills`;
         }
     }
 
-    function toTheTop() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
+    
     /* End of back to the top button */
 
     fullStackTitle();
 
-}, false);
+
