@@ -1,5 +1,4 @@
 /* Global CSS */
-
 body {
     background: url(../media/images/main-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -23,18 +22,28 @@ a:hover {
     font-weight: 600;
 }
 
-section {
-    -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-    -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-    box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
+.shadow-section {
+    -webkit-box-shadow: 0px -7px 15px 1px rgba(0,0,0,0.86);
+    -moz-box-shadow: 0px -7px 15px 1px rgba(0,0,0,0.86);
+    box-shadow: 0px -7px 15px 1px rgba(0,0,0,0.86);
 }
 
 #to-the-top-button {
   opacity: 0.4;
+  position: fixed;
+  bottom: 1vh;
+  right: 1vw;
+}
+
+.border-orange { /* used for profile picture */
+    border: 2px solid #f3cf55;
+}
+
+.orange-title {
+    color: #f3cf55;
 }
 
 /* Navigation bar */
-
 .navbar ul li a {
     display: block;
     color: #f3cf55;
@@ -50,6 +59,7 @@ section {
 .navbar div ul li a:hover {
     transition: 0.4s;
     text-shadow: 1px -1px 5px rgb(255, 217, 0);
+    font-weight: bold;
 }
 
 .navigation-bar {
@@ -59,8 +69,8 @@ section {
 #menu-button {
   color: #f3cf55;
 }
-/* Landing page */
 
+/* Landing page */
 #section-landing {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/landing-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -79,48 +89,25 @@ section {
     color: rgb(91, 206, 91);
 }
 
-.border-orange {
-    border: 2px solid #f3cf55;
-}
-
-.skills-icon {
-    color: #2f4f4f;
-}
-
-.shadowy-boi {
-    -webkit-box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
-}
-
-.orange-title {
-    color: #f3cf55;
-}
-
-.progress-bar-black {
-    background-color: #2f4f4f;
-}
-
 
 /* About me section styling */
-
+#section-aboutme {
+    color: whitesmoke;
+}
 #cv-link a {
     color: #2a2a2a;
 }
 
 #education-column {
     background-color: #808080;
-    color: whitesmoke;
 }
 
 #experience-column {
     background-color: #777777;
-    color: whitesmoke;
 }
 
 #hobbies-column {
     background-color: #656565;
-    color: whitesmoke;
 }
 
 #cv-column {
@@ -132,20 +119,25 @@ section {
     border-bottom: 2px solid black;
 }
 
-.profile-picture {
-    -webkit-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-    -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
-    box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 1);
-}
-
 /* Past projects section */
+#section-projects {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/projects-cover.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
 
 #section-projects a:hover {
     color: white;
 }
 
-
 /*Skills, software and tools section*/
+#section-skills {
+    background-color: #d3d3d3;
+    color: #2f4f4f;
+}
 
 .tools-icon {
     transition: 0.4s;
@@ -156,20 +148,17 @@ section {
     transition: 0.4s;
 }
 
-#section-projects {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/projects-cover.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+.shadowy-boi { /* Used to add the shadow effect on the progress bar */
+    -webkit-box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 6px -4px 14px -5px rgba(0, 0, 0, 0.75);
 }
 
-#section-skills {
-    background-color: #d3d3d3;
-    color: #2f4f4f;
+.progress-bar-black {
+    background-color: #2f4f4f;
 }
 
+/* Contact section */
 #section-contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/contact-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -177,20 +166,7 @@ section {
     -o-background-size: cover;
     background-size: cover;
     color: white;
-    /* height: 70vh;*/
 }
-
-.progress-bar-project {
-    max-width: 100%;
-}
-
-.difficulty-easy {
-    background-color: ghostwhite;
-    color: grey;
-}
-
-
-/* Contact section */
 
 #section-contact a span {
     transition: 0.3s;
@@ -215,8 +191,7 @@ section {
 }
 
 
-/* Footer area */
-
+/* Footer section */
 #footer {
     background-color: #2a2a2a;
     color: #f3cf55;
@@ -236,8 +211,8 @@ section {
 
 /* Custom media queries */
 /* Using the same breaking points as Bootstrap 4 */
-/* Small devices (landscape phones, 576px and up)*/
 
+/* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     #section-projects {
         height: 100vh;
@@ -246,7 +221,6 @@ section {
 
 
 /* Medium devices (tablets, 768px and up)*/
-
 @media (min-width: 768px) {
     #section-projects {
         height: 90vh;
@@ -254,11 +228,10 @@ section {
 
     .navbar div ul li a:hover {
       transform: scale(1.3);
+    }
 }
 
-
 /* Large devices (desktops, 992px and up)*/
-
 @media (min-width: 992px) {
     #section-projects {
         height: 70vh;
@@ -267,9 +240,10 @@ section {
 
 
 /* Extra large devices (large desktops, 1200px and up)*/
-
 @media (min-width: 1200px) {
     #section-projects {
-        height: 65vh;
+        height: 65vh; /* Added custom height for the section project due to content changing dinamically, which
+                        forced the whole section to move upwards, depending on the size of the content */
     }
 }
+
