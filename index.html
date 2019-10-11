@@ -28,14 +28,14 @@
         <button class="navbar-toggler col-12 d-md-none" type="button" data-toggle="collapse"
             data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span id="menu-button">Menu</span>
+            <span id="menu-button" class="fas fa-minus-square orange-title text-center"></span>
         </button>
 
         <div class="collapse navbar-collapse col-12" id="navbarContent" role="navigation">
             <ul class="navbar-nav flex-sm-column flex-md-row">
-                <li class="d-none d-md-block my-3"><a href="#" class="px-1 mx-1"><span
+                <li class="d-none d-md-block my-3"><a href="https://www.facebook.com/gocan.danmihai" class="px-1 mx-1" target="_blank"><span
                             class=" h4 orange-title fab fa-facebook"></span></a></li>
-                <li class="d-none d-md-block my-3 "><a href="#" class="px-1 mx-1"><span
+                <li class="d-none d-md-block my-3 "><a href="https://github.com/WWWaterloo/" class="px-1 mx-1" target="_blank"><span
                             class=" h4 orange-title fab fa-github"></span></a></li>
                 <li class="my-md-3 my-1"><a href="#section-aboutme" class="px-1 mx-1 mx-md-3">About me</a></li>
                 <li class="my-md-3 my-1"><a href="#section-projects" class="px-1 mx-1 mx-md-3">Projects</a></li>
@@ -48,8 +48,8 @@
     <!-- Landing page -->
     <section class="container" id="section-landing">
         <div class="row flex-row-reverse align-items-start d-md-none mx-4 mx-sm-0">
-            <div class="col-1 m-3"><span class=" h2 orange-title fab fa-facebook"></span></div>
-            <div class="col-1 m-3"><span class=" h2 orange-title fab fa-github"></span></div>
+            <div class="col-1 m-3"><a href="https://www.facebook.com/gocan.danmihai" target="_blank"><span class=" h2 orange-title fab fa-facebook"></span></a></div>
+            <div class="col-1 m-3"><a href="https://github.com/WWWaterloo/" target="_blank"><span class=" h2 orange-title fab fa-github"></a></span></div>
         </div>
 
         <!-- Name and short introduction -->
@@ -57,8 +57,8 @@
             <div class="col-xl-1"></div>
             <div class="col-sm-10 col-md-5 col-xl-4 py-0 py-sm-5 my-auto mx-auto text-right" id="main-title">
                 <h3 class="title mx-4 mx-sm-0">Gocan Dan</h3>
-                <h5 id="full-stack-title" class="orange-title title mx-4 mx-sm-0">&nbsp;</h5>
                 <!-- Added a blank space to not have the row collapsed on loading -->
+                <h5 id="full-stack-title" class="orange-title title mx-4 mx-sm-0">&nbsp;</h5>
                 <p class="text-justify mx-3 mx-sm-0">Hello, my name is Dan and I am an aspiring Full Stack Developer,
                     currently studying front and backend technologies. I am a perfectionist, a hard worker and an
                     attentive individual that always goes the extra mile for whoever trusts me with
@@ -68,8 +68,8 @@
                 </p>
             </div>
             <div class="col-sm-10 col-md-5 col-xl-4 my-auto py-0 py-sm-5 mx-auto">
-                <img src="./assets/media/images/dan.png"
-                    class="border-orange img-fluid rounded-circle profile-picture" alt="Gocan Dan, profile picture">
+                <img src="./assets/media/images/dan.png" class="border-orange img-fluid rounded-circle profile-picture"
+                    alt="Gocan Dan, profile picture">
                 <!-- Picture -->
             </div>
             <div class="col-xl-1"></div>
@@ -192,7 +192,8 @@
                     <div class="col-12">
                         <div class="row py-5">
                             <div class="col-12">
-                                <p class="text-justify px-md-4" id="project-content"><strong>Coin Space Calculator</strong> has been one
+                                <p class="text-justify px-md-4" id="project-content"><strong>Coin Space
+                                        Calculator</strong> has been one
                                     of my first JS projects. The skeleton and the user interface is rendered using
                                     Bootstrap. The goal of this project is to calculate if the amount a coin is worth is
                                     actually worth the space
@@ -219,20 +220,18 @@
 
                     </div>
                     <div class="col-6 col-md-3 pt-5 pb-2 pt-md-0 ">
-                        <a class="h1 orange-title fab fa-github my-auto py-2" href="" id="github-link"
-                            target="_blank"></a>
+                        <a class="h1 orange-title fab fa-github my-auto py-2" href="https://www.github.com"
+                            id="github-link" target="_blank"></a>
                         <p class="my-auto title">GitHub </p>
                     </div>
                     <div class="col-6 col-md-3 pt-5 pb-2 pt-md-0">
-                        <a class="h1 orange-title fas fa-link my-auto py-2" href="" id="deployed-link"
-                            target="_blank"></a>
+                        <a class="h1 orange-title fas fa-link my-auto py-2" href="https://www.google.com"
+                            id="deployed-link" target="_blank"></a>
                         <p class="my-auto title">Deployed project</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
     </section>
 
 
@@ -247,7 +246,7 @@
         </div>
 
         <div class="row">
-
+            <!-- Progress bar copied from Bootstrap documentation and modified -->
             <div class="col-sm-12 col-md-6">
 
                 <div class="row py-2">
@@ -255,8 +254,7 @@
                     <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-html5"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 80%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;HTML5</strong></p>
                             </div>
@@ -270,8 +268,7 @@
                     <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-css3-alt"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 60%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;CSS3</strong></p>
                             </div>
@@ -285,8 +282,7 @@
                     <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-js-square"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 60%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;JavaScript</strong></p>
                             </div>
@@ -301,8 +297,7 @@
                     <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-bootstrap"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 55%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 55%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;Bootstrap 4</strong></p>
                             </div>
@@ -316,8 +311,7 @@
                     <div class="col-1 my-auto py-1"><span class="h2 skills-icon icon-jquery"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 53%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 53%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;jQuery</strong></p>
                             </div>
@@ -338,8 +332,7 @@
                     <div class="col-1 my-auto py-1"><span class="h2 skills-icon icon-sass"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 35%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 35%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;Sass</strong></p>
                             </div>
@@ -353,8 +346,7 @@
                     <div class="col-1 my-auto py-1"><span class="h2 skills-icon icon-csharp"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 20%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;C#</strong></p>
                             </div>
@@ -368,8 +360,7 @@
                     <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-python"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi ">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 15%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 15%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;Python</strong></p>
                             </div>
@@ -383,8 +374,7 @@
                     <div class="col-1 my-auto py-1"><span class="h4 skills-icon icon-d3"></span></div>
                     <div class="col-9 my-auto py-1 ">
                         <div class="progress shadowy-boi ">
-                            <div class="progress-bar progress-bar-striped progress-bar-black" role="progressbar"
-                                style="width: 15%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 15%"></div>
                             <div class="text-left">
                                 <p><strong class="my-auto py-0">&nbsp;D3</strong></p>
                             </div>
@@ -404,12 +394,14 @@
                 <p class="text-center h4 pt-3">
                     <span class="tools-icon h2 mx-1 fab fa-github" title="GitHub"></span>
                     <span class="tools-icon h2 mx-1 fab fa-adobe" title="Adobe Photoshop"></span>
+                    <span class="tools-icon h2 mx-1 icon-azure" title="Adobe Photoshop"></span>
                     <span class="tools-icon h2 mx-1  icon-unity" title="Unity"></span>
                     <span class="tools-icon h2 mx-1  icon-ubuntu" title="Ubuntu"></span>
                     <span class="tools-icon h2 mx-1  icon-npm" title="NPM"></span>
                 </p>
             </div>
         </div>
+
     </section>
 
     <!-- Contact section -->
@@ -423,7 +415,7 @@
                     <span class="border-bottom">Many thanks</span></p>
 
                 <form id="contact-form">
-
+                    <!-- Form inspired from Bootstrap documentation -->
                     <div class="form-group">
                         <label for="subjectInput">Subject</label>
                         <input type="text" class="form-control" id="subjectInput" placeholder="Application idea!"
@@ -452,6 +444,7 @@
             </div>
         </div>
 
+        <!-- Alternative contacts, one for WA, the other one for Facebook -->
         <div class="row pt-4">
             <div class="col-12 text-center">
                 <p class="text-center"><a
@@ -463,6 +456,19 @@
         </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="container" id="footer">
+        <div class="row py-4">
+            <div class="col-12 col-sm-6 text-left">
+                <p class="my-auto title">Copyright 2019, Gocan Dan</p>
+            </div>
+            <div class="col-12 col-sm-6 text-left text-sm-right">
+                <a href="./privacy-policy.html" target="_blank" class="my-auto title">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to the top button -->
     <div class="container">
         <div class="row">
             <div class="col-12 text-right fixed-bottom">
@@ -473,31 +479,10 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="container" id="footer">
-        <div class="row py-4 my-auto">
-            <div class="col-12 col-sm-6 text-left">
-                <p class="my-auto title">Copyright 2019, Gocan Dan</p>
-            </div>
-            <div class="col-12 col-sm-6 text-left text-sm-right">
-                <a href="./privacy-policy.html" target="_blank" class="my-auto title">Privacy policy</a>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-
-
-
-
-
     <!-- Optional JavaScript -->
     <script src="/assets/js/script.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

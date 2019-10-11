@@ -57,10 +57,8 @@ section {
 }
 
 #menu-button {
-    color: lightgrey;
+  color: #f3cf55;
 }
-
-
 /* Landing page */
 
 #section-landing {
@@ -139,11 +137,6 @@ section {
     -moz-box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 0.85);
     box-shadow: 9px -8px 18px -9px rgba(0, 0, 0, 1);
 }
-
-.maxsize {
-    width: 100%;
-}
-
 
 /* Past projects section */
 
