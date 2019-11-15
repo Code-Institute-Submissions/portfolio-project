@@ -8,10 +8,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-div:hover {
-    transform: scale(1.03);
-    transition: 0.3s;
-
+#active-background {
+    z-index: -100;
+    color: rgba(250, 250, 250, 0.2);
+}
 a {
     transition: 0.3s;
 }

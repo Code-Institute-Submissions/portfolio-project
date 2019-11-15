@@ -29,6 +29,534 @@ function fullStackTitle() {
     interval = setInterval(addTitle, 200);
 }
 
+function codeText() {
+    var fullStackElement = document.getElementById("code-text");
+    let interval;
+    let i = 0;
+    let textInitial = `
+    
+    <!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/63c8cd1252.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="libraries\font-mfizz\font-mfizz.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap" rel="stylesheet">
+
+
+    <title>Dan Gocan, Full Stack Dev.</title>
+</head>
+
+<body>
+
+    <div class="col-12 fixed-top container-fluid" id="active-background">
+        <p class="" id="code-text"></p>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-md fixed-top flex-md-row-reverse py-1 navigation-bar container flex-sm-column">
+
+        <!-- Button taken off Bootstrap documentation to toggle the navigation bar 
+			in accordance with the width of the screen -->
+        <button class="navbar-toggler col-12 d-md-none" type="button" data-toggle="collapse"
+            data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span id="menu-button" class="fas fa-minus-square orange-title text-center"></span>
+        </button>
+
+        <div class="collapse navbar-collapse col-12" id="navbarContent" role="navigation">
+            <ul class="navbar-nav flex-sm-column flex-md-row">
+                <li class="d-none d-md-block my-3"><a href="https://www.facebook.com/gocan.danmihai" class="px-1 mx-1"
+                        target="_blank"><span class=" h4 orange-title fab fa-facebook"></span></a></li>
+                <li class="d-none d-md-block my-3 "><a href="https://github.com/WWWaterloo/" class="px-1 mx-1"
+                        target="_blank"><span class=" h4 orange-title fab fa-github"></span></a></li>
+                <li class="my-md-3 my-1"><a href="#section-aboutme" class="px-1 mx-1 mx-md-3">About me</a></li>
+                <li class="my-md-3 my-1"><a href="#section-projects" class="px-1 mx-1 mx-md-3">Projects</a></li>
+                <li class="my-md-3 my-1"><a href="#section-skills" class="px-1 mx-1 mx-md-3">Skills</a></li>
+                <li class="my-md-3 my-1"><a href="#section-contact" class="px-1 mx-1 mx-md-3">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Landing page -->
+    <section class="container shadow-section" id="section-landing">
+        <div class="row flex-row-reverse align-items-start d-md-none mx-4 mx-sm-0">
+            <div class="col-1 m-3"><a href="https://www.facebook.com/gocan.danmihai" target="_blank"><span
+                        class=" h2 orange-title fab fa-facebook"></span></a></div>
+            <div class="col-1 m-3"><a href="https://github.com/WWWaterloo/" target="_blank"><span
+                        class=" h2 orange-title fab fa-github"></a></span></div>
+        </div>
+
+        <!-- Name and short introduction -->
+        <div class="row">
+            <div class="col-xl-1"></div>
+            <div class="col-sm-10 col-md-5 col-xl-4 py-0 py-sm-5 my-auto mx-auto text-right" id="main-title">
+                <h3 class="title mx-4 mx-sm-0">Gocan Dan</h3>
+                <!-- Added a blank space to not have the row collapsed on loading -->
+                <h5 id="full-stack-title" class="orange-title title mx-4 mx-sm-0">&nbsp;</h5>
+                <p class="text-justify mx-3 mx-sm-0">Hello, my name is Dan and I am an aspiring Full Stack Developer,
+                    currently studying front and backend technologies. I am a perfectionist, a hard worker and an
+                    attentive individual that always goes the extra mile for whoever trusts me with
+                    their ideas, projects, identities or businesses. I design
+                    <strong class="orange-title">fully responsive</strong>, fast loading and connected web application
+                    and websites. <strong id="dublin">Located in Dublin.</strong>
+                </p>
+            </div>
+            <div class="col-sm-10 col-md-5 col-xl-4 my-auto py-0 py-sm-5 mx-auto">
+                <img src="./assets/media/images/dan.png" class="border-orange img-fluid rounded-circle profile-picture"
+                    alt="Gocan Dan, profile picture">
+                <!-- Picture -->
+            </div>
+            <div class="col-xl-1"></div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="container shadow-section" id="section-aboutme">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-xl-4 mx-auto py-5" id="education-column">
+                <h4 class="text-center pb-4 title"><span class="orange-title fas fa-user-graduate"></span> Education
+                </h4>
+                <div class="row">
+                    <p class="col-12 col-lg-2 text-left h5 column-title pb-0 mb-0">2020</p>
+                    <p class="col-12 col-lg-10 text-justify pb-2">Graduated a Full Stack Development bootcamp with
+                        <a href="" class="orange-title">Code Institute</a> which took me approximately one year and
+                        taught me all the necessary skill to develop responsive web applications.</p>
+                </div>
+                <div class="row">
+                    <p class="col-12 col-lg-2 text-left h5 column-title pb-0 px-sm-3 mb-0 ">2019</p>
+                    <p class="col-12 col-lg-10 text-justify pb-2 mr-1 mx-lg-0">Graduated the <a href=""
+                            class="orange-title">FreeCode Camp</a> modules and learned the React, Node.js and Angular
+                        technologies, allowing me a more efficient, a more streamlined and a quicker development
+                        process.</p>
+                </div>
+                <div class="row">
+                    <p class="col-12 col-lg-2 text-left h5 column-title mb-0">2016</p>
+                    <p class="col-12 col-lg-10 text-justify pb-2 mr-1 mx-lg-0">Received my BA in History from the
+                        University of Oradea, Romania</p>
+                </div>
+                <div class="row">
+                    <p class="col-12 col-lg-2 text-left h5 column-title mb-0">2013</p>
+                    <p class="col-12 col-lg-10 text-justify pb-2 mr-1 mx-lg-0">Took the classes of the Technical
+                        University of Cluj-Napoca for one year where I studied programming, computer sciences,
+                        electronics and advanced mathematics.
+                    </p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-xl-4 mx-auto py-5" id="experience-column">
+                <h4 class="text-center pb-4 title"><span class="orange-title fas fa-laptop-code"></span> Experience
+                </h4>
+                <div class="row">
+                    <p class="col-xs-12 col-lg-2 text-left h5 column-title pb-xs-0 px-md-3 mb-0">2018</p>
+                    <p class="col-xs-12 col-lg-10 text-justify mr-1 mx-lg-0">Since 2018 I have been employed for a large
+                        IT corporation on an, initially Health and Safety role, and currently on an administrative one.
+                    </p>
+                </div>
+                <div class="row">
+                    <p class="col-xs-12 col-lg-2 text-left h5 column-title pb-xs-0 px-md-3 mb-0">2013</p>
+                    <p class="col-xs-12 col-lg-10 text-justify mr-1 mx-lg-0">I have helped designing and running a
+                        sport's association website. The technologies used were mainly HTML, CSS and pure JavaScript.
+                        The association and the website were disbanded in 2016.</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4 col-xl-4 mx-auto py-5" id="hobbies-column">
+                <h4 class="text-center pb-4 title"><span class="orange-title fas fa-chess"></span> Hobbies</h4>
+                <p class="text-justify">I think my greatest and most relevant hobby is my passion for video games,
+                    especially strategy ones and even more so, grand strategy games (like Europa Universalis IV or
+                    Hearts of Iron IV). Apart from that, I am trying to develop all sorts
+                    of bizarre entrepreneurial endevaours whose main rolle, more than everything is to keep my mind
+                    busy.</p>
+            </div>
+        </div>
+
+        <div class="row text-right ">
+            <div class="col-12 py-5 pr-5 shadow-section" id="cv-column">
+                <p class="my-auto">For more information, please <span id="cv-link"><strong><a href="./assets/cv.pdf"
+                                download>download my
+                                CV</a></strong></span><br class="d-none d-md-block"> and check below a few of my
+                    personal projects.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Past and current projects section -->
+    <section class="container py-5 shadow-section" id="section-projects">
+        <h2 class="invisible">My past projects</h2> <!-- Addedd an invisible header for the section -->
+        <div class="row h-100 d-flex align-items-center py-5 ">
+            <div class="col-sm-12 col-md-4 col-lg-3 mx-auto my-auto ">
+
+                <div class="row pt-5 pb-2 text-center">
+                    <div class="col-12">
+                        <a href="javascript:void()" class="project-block orange-title h5 title"
+                            id="coin-space-calculator" onclick="coinSpaceF()">Coin space
+                            calculator</a>
+                    </div>
+                </div>
+
+                <div class="row py-2 text-center">
+                    <div class="col-12">
+                        <a href="javascript:void()" class="project-block orange-title h5 title" id="mad-memory-game"
+                            onclick="madMemoryF()">MadMemory
+                            Game</a>
+                    </div>
+                </div>
+
+                <div class="row py-2 text-center">
+                    <div class="col-12">
+                        <a href="javascript:void()" class="project-block orange-title h5 title" id="brigades"
+                            onclick="brigadesF()">Brigades: The card
+                            game</a>
+                    </div>
+                </div>
+
+                <div class="row py-2 text-center">
+                    <div class="col-12">
+                        <a href="javascript:void()" class="project-block orange-title h5 title" id="social-network"
+                            onclick="socialNetworkF()">The social
+                            network
+                            "LeaveIt"</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Beginning of the projects second row -->
+            <div class="col-sm-12 col-md-8 col-lg-9 text-center mx-auto" id="default-project-content">
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row py-5">
+                            <div class="col-12">
+                                <p class="text-justify px-md-4" id="project-content"><strong>Coin Space
+                                        Calculator</strong> has been one
+                                    of my first JS projects. The skeleton and the user interface is rendered using
+                                    Bootstrap. The goal of this project is to calculate if the amount a coin is worth is
+                                    actually worth the space
+                                    it occupie=s. For example, in Dublin, for the more expensive areas of the city it
+                                    has become unprofitable to keep a coin of 1 cent inside your house as you are paying
+                                    more rent for the space it occupies than 1 cent.
+                                    The application can calculate for Dollars, Euros, Australian and Canadian Dollars,
+                                    as well as for Yuan and Yen. It takes into consideration all available coins in
+                                    circulation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6 text-left px-md-5">
+                        <p class="my-auto h6 pb-3 title">Tech used:</p>
+                        <span id="tech-used">
+                            <i class="h2 fab fa-html5 mx-1"></i>
+                            <i class="h2 fab fa-css3-alt mx-1"></i>
+                            <i class="h2 fab fa-bootstrap mx-1"></i>
+                            <i class="h2 fab fa-js-square mx-1"></i>
+                            <i class="h2 fab icon-jquery mx-1"></i>
+                        </span>
+
+                    </div>
+                    <div class="col-6 col-md-3 pt-5 pb-2 pt-md-0 ">
+                        <a class="h1 orange-title fab fa-github my-auto py-2" href="https://www.github.com"
+                            id="github-link" target="_blank"></a>
+                        <p class="my-auto title">GitHub </p>
+                    </div>
+                    <div class="col-6 col-md-3 pt-5 pb-2 pt-md-0">
+                        <a class="h1 orange-title fas fa-link my-auto py-2" href="https://www.google.com"
+                            id="deployed-link" target="_blank"></a>
+                        <p class="my-auto title">Deployed project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Skills section -->
+    <section class="container py-5 shadow-section" id="section-skills">
+        <h2 class="invisible">My skills and the software I use</h2> <!-- Addedd an invisible header for the section -->
+        <div class="row">
+            <div class="col-12 text-center">
+                <h5 class="py-4 h3 title">Technologies and libraries used:</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Progress bar copied from Bootstrap documentation and modified -->
+            <div class="col-sm-12 col-md-6">
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-html5"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 80%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;HTML5</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-css3-alt"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 60%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;CSS3</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-js-square"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 60%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;JavaScript</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-bootstrap"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 55%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;Bootstrap 4</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h2 skills-icon icon-jquery"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 53%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;jQuery</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+
+
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h2 skills-icon icon-sass"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 35%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;Sass</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h2 skills-icon icon-csharp"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 20%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;C#</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h2 skills-icon fab fa-python"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi ">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 15%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;Python</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+                <div class="row py-2">
+                    <div class="col-1"></div>
+                    <div class="col-1 my-auto py-1"><span class="h4 skills-icon icon-d3"></span></div>
+                    <div class="col-9 my-auto py-1 ">
+                        <div class="progress shadowy-boi ">
+                            <div class="progress-bar progress-bar-striped progress-bar-black" style="width: 15%"></div>
+                            <div class="text-left">
+                                <p><strong class="my-auto py-0">&nbsp;D3</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row pt-5">
+            <div class="col-12">
+                <p class="text-center h3 title">Software and tools used:</p>
+            </div>
+            <div class="col-12">
+                <p class="text-center h4 pt-3">
+                    <span class="tools-icon h2 mx-1 fab fa-github" title="GitHub"></span>
+                    <span class="tools-icon h2 mx-1 fab fa-adobe" title="Adobe Photoshop"></span>
+                    <span class="tools-icon h2 mx-1 icon-azure" title="Adobe Photoshop"></span>
+                    <span class="tools-icon h2 mx-1  icon-unity" title="Unity"></span>
+                    <span class="tools-icon h2 mx-1  icon-ubuntu" title="Ubuntu"></span>
+                    <span class="tools-icon h2 mx-1  icon-npm" title="NPM"></span>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact section -->
+    <section class="container py-5 shadow-section" id="section-contact">
+        <h2 class="invisible">Contact section</h2> <!-- Addedd an invisible header for the section -->
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-lg-8 col-xl-7 mx-auto my-auto">
+                <p class="py-5"> If you have any idea you'd like us to discuss or for any other professional queries,
+                    please use the form attached and I will get back to you as soon as possible.
+                    <br>
+                    <span class="border-bottom">Many thanks</span></p>
+
+                <form id="contact-form">
+                    <!-- Form inspired from Bootstrap documentation -->
+                    <div class="form-group">
+                        <label for="subjectInput">Subject</label>
+                        <input type="text" class="form-control" id="subjectInput" placeholder="Application idea!"
+                            minlength="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Your e-mail address</label>
+                        <input type="email" class="form-control" id="emailInput" placeholder="johnsmith@email.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="textInput">Your message</label>
+                        <textarea type="text" class="form-control" id="textInput" rows="7" minlength="30"
+                            placeholder="Please add your messagere here." required></textarea>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 text-center form-group">
+                            <button type="submit" class="w-100 btn py-2" id="send-button" onclick="sendForm()">
+                                <span class="h6 my-auto"><strong>Send</strong></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+
+        <!-- Alternative contacts, one for WA, the other one for Facebook -->
+        <div class="row pt-4">
+            <div class="col-12 text-center">
+                <p class="text-center"><a
+                        href="https://wa.me/353861678028?text=I'm%20interested%20in%20working%20with%20you"
+                        target="_blank"><span class="h1 mx-2 orange-title fab fa-whatsapp"></span></a>
+                    <a href="http://m.me/gocan.danmihai" target="_blank"><span
+                            class="h1 mx-2 orange-title fab fa-facebook-messenger"></span></a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container shadow-section" id="footer">
+        <div class="row py-4">
+            <div class="col-12 col-sm-6 text-left">
+                <p class="my-auto title">Copyright 2019, Gocan Dan</p>
+            </div>
+            <div class="col-12 col-sm-6 text-left text-sm-right">
+                <a href="./privacy-policy.html" target="_blank" class="my-auto title">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to the top button -->
+    <div class="container">
+        <div class="row">
+            <div class="col-2 text-right">
+                <button id="to-the-top-button" class="btn btn-dark p-2" onclick="toTheTop()">
+                    <span class="h4 orange-title fas fa-arrow-alt-circle-up my-auto"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="/assets/js/script.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>`
+    let text = textInitial.split("");
+
+    function addTitle() {
+        fullStackElement.append(text[i]);
+
+        if (i < text.length - 1) {
+            i++;
+        }
+            else {
+                clearInterval(interval);
+        }
+    }
+    interval = setInterval(addTitle, 20);
+}
+
+
 
 
 
@@ -162,5 +690,16 @@ function scrollFunction() {
 }
 /* End of back to the top button */
 
+function shadowHover() {
+var container = document.getElementsByTagName("div");
+container.addEventListener('mouseenter', function(){
+        this.classList.add('shadow-section-hover');
+})
+container.addEventListener('mouseleave', function(){
+        this.classList.remove('shadow-section-hover');
+})
+}
+
 
 fullStackTitle();
+codeText();
