@@ -1,10 +1,21 @@
 # Gocan Dan, Full Stack dev. 
 
-One or two paragraphs providing an overview of your project.
+This is my personal presentation website, promoting myself as a Full Stack web developer to potential clients and / or employers. It lists my technical skills and my ability to use certain technologies and programming languages. And apart from the professional information, certain personal bits are inserted, like a history of my employment and education, together with a list of my hobbies. 
 
-Essentially, this part is your sales pitch.
+Any employer or potential client can see all the skills presented on the website at work as most technologies listed there are used to build the website. 
+
  
 ## UX
+
+This website is mainly focused on potential work opportunities for me, attracting clients and tech. companies that are actively looking for staff or for someone to cooperate with. If any employer is interested, they can see my professional and educational history, a bit about myself, my technical skills and for their convenience, a CV is available to be downloaded.
+
+In order to make the recruiting process as quick as possible, at the end of the website, there is a contact form, easily accessible as easy to use. 
+
+### User Stories
+
+ - As a recruiter for a large tech company, I want to hire a new front-end developer so I am checking the website 
+ - As someone with an application idea
+ - As a small tech company looking to contract work
  
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
