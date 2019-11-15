@@ -8,6 +8,10 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
+div:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+
 a {
     transition: 0.3s;
 }
