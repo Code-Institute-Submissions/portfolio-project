@@ -1,5 +1,4 @@
 /* Global CSS */
-
 body {
     background: url(../media/images/main-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -51,8 +50,8 @@ a:hover {
     color: #f3cf55;
 }
 
-/* Navigation bar */
 
+/* Navigation bar */
 .navbar ul li a {
     display: block;
     color: #f3cf55;
@@ -79,8 +78,8 @@ a:hover {
     color: #f3cf55;
 }
 
-/* Landing page */
 
+/* Landing page */
 #section-landing {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/landing-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -99,8 +98,8 @@ a:hover {
     color: rgb(91, 206, 91);
 }
 
-/* About me section styling */
 
+/* About me section*/
 #section-aboutme {
     color: whitesmoke;
 }
@@ -131,8 +130,8 @@ a:hover {
     border-bottom: 2px solid black;
 }
 
-/* Past projects section */
 
+/* Past projects section */
 #section-projects {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/projects-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -146,8 +145,8 @@ a:hover {
     color: white;
 }
 
-/*Skills, software and tools section*/
 
+/*Skills, software and tools section*/
 #section-skills {
     background-color: #d3d3d3;
     color: #2f4f4f;
@@ -173,8 +172,8 @@ a:hover {
     background-color: #2f4f4f;
 }
 
-/* Contact section */
 
+/* Contact section */
 #section-contact {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/images/contact-cover.png) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -214,8 +213,8 @@ input:valid {
     border: 2px solid rgb(161, 235, 25);
 }
 
-/* Footer section */
 
+/* Footer section */
 #footer {
     background-color: #2a2a2a;
     color: #f3cf55;
@@ -232,12 +231,12 @@ input:valid {
     transition: 0.4s;
 }
 
-/* Custom media queries */
 
+/* Custom media queries */
 /* Using the same breaking points as Bootstrap 4 */
 
-/* Small devices (landscape phones, 576px and up)*/
 
+/* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     #section-projects {
         height: 100vh;
@@ -245,7 +244,6 @@ input:valid {
 }
 
 /* Medium devices (tablets, 768px and up)*/
-
 @media (min-width: 768px) {
     #section-projects {
         height: 90vh;
@@ -256,7 +254,6 @@ input:valid {
 }
 
 /* Large devices (desktops, 992px and up)*/
-
 @media (min-width: 992px) {
     #section-projects {
         height: 70vh;
@@ -264,11 +261,10 @@ input:valid {
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
-
 @media (min-width: 1200px) {
     #section-projects {
         height: 65vh;
         /* Added custom height for the section project due to content changing dinamically, which
-                        forced the whole section to move upwards, depending on the size of the content */
+        forced the whole section to move upwards, depending on the size of the content */
     }
 }

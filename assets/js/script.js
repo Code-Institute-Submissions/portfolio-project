@@ -16,13 +16,17 @@ function fullStackTitle() {
     let textInitial = "Full Stack Developer";
     let text = textInitial.split("");
 
-    function dostuff() {
+    function addTitle() {
         fullStackElement.append(text[i]);
 
-        if (i < text.length - 1) i++;
-        else clearInterval(interval);
+        if (i < text.length - 1) {
+            i++;
+        }
+            else {
+                clearInterval(interval);
+        }
     }
-    interval = setInterval(dostuff, 200);
+    interval = setInterval(addTitle, 200);
 }
 
 
@@ -156,10 +160,7 @@ function scrollFunction() {
         topButton.classList.remove("visible");
     }
 }
-
-
 /* End of back to the top button */
 
+
 fullStackTitle();
-
-
