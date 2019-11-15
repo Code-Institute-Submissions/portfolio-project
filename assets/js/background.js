@@ -1,4 +1,10 @@
-<!doctype html>
+function codeText() {
+    var codeElement = document.getElementById("code-text");
+    let interval;
+    let i = 0;
+    let textInitial = `
+    
+    <!doctype html>
 <html lang="en">
 
 <head>
@@ -20,10 +26,8 @@
 
 <body>
 
-        <div class="col-12 fixed-top container-fluid" id="active-background">
-    <div class="col-6">
+    <div class="col-12 fixed-top container-fluid" id="active-background">
         <p class="" id="code-text"></p>
-    </div>
     </div>
 
     <!-- Navigation bar -->
@@ -492,7 +496,6 @@
 
     <!-- Optional JavaScript -->
     <script src="/assets/js/script.js"></script>
-    <script src="/assets/js/background.js"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -506,4 +509,20 @@
         crossorigin="anonymous"></script>
 </body>
 
-</html>
+</html>`
+    let text = textInitial.split("");
+
+    function addTitle() {
+        codeElement.append(text[i]);
+
+        if (i < text.length - 1) {
+            i++;
+        }
+            else {
+                clearInterval(interval);
+        }
+    }
+    interval = setInterval(addTitle, 20);
+}
+
+codeText();
