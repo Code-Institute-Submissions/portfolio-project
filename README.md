@@ -1,4 +1,5 @@
-##https://portfoliowebsite.z35.web.core.windows.net/
+##Please see the deployed version at: 
+https://portfoliowebsite.z35.web.core.windows.net/
 
 # Gocan Dan, Full Stack dev. 
 This is my personal presentation website, promoting myself as a Full Stack web developer to potential clients and / or employers. It lists my technical skills and my ability to use certain technologies and programming languages. And apart from the professional information, certain personal bits are inserted, like a history of my employment and education, together with a list of my hobbies. 
