@@ -1,92 +1,116 @@
 # Gocan Dan, Full Stack dev. 
-
 This is my personal presentation website, promoting myself as a Full Stack web developer to potential clients and / or employers. It lists my technical skills and my ability to use certain technologies and programming languages. And apart from the professional information, certain personal bits are inserted, like a history of my employment and education, together with a list of my hobbies. 
 
 Any employer or potential client can see all the skills presented on the website at work as most technologies listed there are used to build the website. 
 
  
 ## UX
-
 This website is mainly focused on potential work opportunities for me, attracting clients and tech. companies that are actively looking for staff or for someone to cooperate with. If any employer is interested, they can see my professional and educational history, a bit about myself, my technical skills and for their convenience, a CV is available to be downloaded.
 
-In order to make the recruiting process as quick as possible, at the end of the website, there is a contact form, easily accessible as easy to use. 
+In order to make the recruiting process as quick as possible, at the end of the website, there is a contact form, easily accessible and just as easy to use. 
 
 ### User Stories
+ - As a recruiter for a large tech company, I want to hire a new front-end developer so I am checking the website and downloading the CV. 
+ - As an invidual with a web application idea, I want to find someone to help me implement it and then sell it on the market so I fill the form and then send my message to a full stack developer. 
+ - As a director in a small tech company looking to contracted work, I want to find someone that can help us on a current project so I am checking the website and downloading the CV. 
+ - As a writer for a tech magazine, I want to see what is the current offer and demand on the tech jobs market so I am looking at what technologies are being studied and used so I am checking the "Technologies known" section.  
 
- - As a recruiter for a large tech company, I want to hire a new front-end developer so I am checking the website 
- - As someone with an application idea
- - As a small tech company looking to contract work
- 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
-
-## Features
-
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
- 
 ### Existing Features
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
 
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
+#### Landing page
+Where a short introduction is posted together with a picture of me. The user can have a quick glance to understand what the website is about. The navigation bar is at the top. 
 
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+#### About me
+Here the user can check my educational and professional background, together with a short description of my hobbies. It is split in 3 columns, the first two being in a rigid, chronological order. At the bottom of the section there exists the possibility for any user to download my CV, in .pdf format.
 
-### Features Left to Implement
-- Another feature idea
+#### Past projects
+All my previous projects can be found here, with a small description of each, technologies used and the links to the deployed version and the raw code. A menu is available on the left side so the user can quickly browse through the projects.
+
+#### Technologies and libraries used
+This section lists my technical skills in terms of:
+    - languages and libraries known
+    - how well I estimate I know those languages and libraries (this is achieved graphically)
+    - the tools and software I use to complete my projects 
+
+#### Contact form
+A fairly straight forward contact form where the user inputs their name, e-mail address and the message for me. Form validation is in place together with certain graphical hints if the user inputs the wrong type of information. 
+
 
 ## Technologies Used
+- [HTML5](https://www.w3.org/TR/html52/)
+    - The newest version of HTML has been used to build the general structure of the project.
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+- [CSS3](https://www.w3.org/Style/CSS/)
+    - CSS has been used to add custom style to the project, uncovered by the Bootstrap4 library. 
 
-- [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+    - Vanilla JavaScript has been used to alter how the project behaves in user interaction and to add a certain level of dynamism to the page. 
 
+- [Bootstrap4](https://bootstrap.com)
+    - The project used Bootstrap4 for grid allignment and to simplify styling. 
+
+- [FontAwesome](https://fontawesome.com/)
+    - Font Awesome was used to enrich the visual content of the website by providing icons in the form of text, easily addable and modifiable.
+
+- [FontMfizz](http://fizzed.com/oss/font-mfizz)
+    - Font Mfizz has been used for the graphical icons found around the website that were not covered by the Font Awesome icons. 
+
+- [GoogleFonts](https://fonts.google.com/)
+    - The font used throughout the website was taken and is hosted by Google Fonts. 
 
 ## Testing
+These tests were conducted on the following browsers: 
+    - Mozile Firefox
+    - Google Chrome
+    - Windows Edge
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your user stories from the UX section and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### General functionality
+ - all sections have been browsed through to make sure all elements display and align correctly
+ - all information has been checked to be accurate
+ - all elements of the page have been checked to not contain any futile or poorly implemented code 
+ - all links on the page have been checked to lead to the correct destination
+ - the link for CV Downloading has been checked to be working
+ - all icons used through Font Awesome and Font Mfizz have been checked to make sure they load correctly under all conditions, in all used browsers.
+ - the "Past Projects" section has been thoroughly tested to make sure the text switched correctly in accordance with what the user's choices. The GitHub and Deployed projects links were tested as well. 
 
-Whenever it is feasible, prefer to automate your tests, and if you've done so, provide a brief explanation of your approach, link to the test file(s) and explain how to run them.
+ ### User stories 
+ - for anyone interested in contracting or hiring me, the "Download CV" links can be used and is fully functional.
+ - for anyone interested in my skills or my abilities, all information on the website is displayed correctly and fully available.
+ - for anyone wishing to contact me, the form at the end of the page is functional with form validation is in place. 
 
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
+### Responsiveness 
 
-1. Contact form:
-    1. Go to the "Contact Us" page
-    2. Try to submit the empty form and verify that an error message about the required fields appears
-    3. Try to submit the form with an invalid email address and verify that a relevant error message appears
-    4. Try to submit the form with all inputs valid and verify that a success message appears.
+#### Cross browser compatibility
+The website has been checked and it displays correctly on all browsers used.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+#### Cross device compatibility
+The website has been checked for the following devices: 
+- Extra large DELL monitor (24")
+- ASUS laptop screen (17.1")
+- Lenovo laptop screen (14")
+- Samsung mobile phone (7")
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+It was deemed displaying correctly on all tested devices and being fully responsive.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+### Bugs found
+- In the Microsoft Edge browser, there is a 1px distance between the three columns in the "About me" section. It was not addressed yet. 
+
 
 ## Deployment
+The website was deployed on Azure servers and can be found at the following link: (https://portfoliowebsite.z35.web.core.windows.net/). The Azure integration in Microsoft Visual Code was used. 
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
-
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
-
-In addition, if it is not obvious, you should also describe how to run your code locally.
+The deployed version and the GitHub version have no differences and only one branch is used (Master). 
 
 
 ## Credits
 
-### Content
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+### Code
+- The script for the "Full Stack Developer" title at the top was inspired from a StackOverflow post
+- Certain other bits were inspired from [W3Schools](https://www.w3schools.com/)
 
 ### Media
-- The photos used in this site were obtained from ...
+- All media used on this website was created by my fiancee and life partner, Maria Nicolaescu and I thank her greatly. 
 
 ### Acknowledgements
-
-- I received inspiration for this project from X
+- Of great help for this project was Haley Schaffer's GitHub account and the posted Code Institute solutions. Of particular great help was this repository: https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive
