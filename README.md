@@ -102,6 +102,12 @@ It was deemed displaying correctly on all tested devices and being fully respons
 ## Deployment
 The website was deployed on Azure servers and can be found at the following link: (https://portfoliowebsite.z35.web.core.windows.net/). The Azure integration in Microsoft Visual Code was used. 
 
+If you wish to deploy this project yourself, please follow the following steps: 
+    - clone the repository
+    - head to "Settings" and scroll to the "GitHub Pages" section
+    - select master branch, do not select a theme and hit "Save" button at the bottom of the page
+    - please be aware that might take up to several minutes to have your page published and propagated
+
 The deployed version and the GitHub version have no differences and only one branch is used (Master). 
 
 
